@@ -24,10 +24,11 @@ class App extends Component {
     })
   }
 
-  addTodo = todos => {
-    todos.id = Math.random();
+  addTodo = todo => {
+    todo.id = Math.random();
+    let todos = [...this.state.todos, todo]
     this.setState({
-      todos: [...this.state.todos, todos]
+      todos: todos
     })
   }
 
