@@ -3,14 +3,16 @@ import React from 'react';
 const Todos = ({ todos }) => { 
 
     const todoList = todos.length ? (
-        <div className="todos collection">
-            {todos.map(todo => {
-                return <div key={todo.id}>{todo.content}</div>
-            })}
-        </div>
-    ) : <p>No todos!</p>
+        todos.map(todo => {
+            return (
+                <div className="collection-item" key={todo.id}>
+                    <span>{todo.content}</span>
+                </div>
+            )
+        })
+    ) : <p className="center">No todos!</p>
     return (
-        <div>
+        <div className="todos collection">
             {todoList}
         </div>
     )
