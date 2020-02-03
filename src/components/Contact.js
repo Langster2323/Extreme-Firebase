@@ -1,10 +1,16 @@
 import React from 'react';
 
-const Contact = () => {
+const Contact = (props) => {
+    // setTimeout(() => {
+    //    return props.history.push('./about')
+    // }, 2000);
     return (
         <div className="container">
             <h4 className="center">Contact</h4>
-            <p>lorem empsum text</p>
+            <p className="center">quia molestiae reprehenderit quasi 
+            aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis 
+            quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus 
+            et vero voluptates excepturi deleniti ratione</p>
         </div>
     )
 }
