@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Todos from './Todos';
-import AddTodo from './AddTodo';
+import Navbar from './components/Navbar'
 
 
 class App extends Component {
 
   render() {
     return (
-      <div className="todo-app container">
-        
+      <div className="">
+        <Navbar />
       </div>
     );
   }
